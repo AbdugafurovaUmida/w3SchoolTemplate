@@ -1,0 +1,54 @@
+@media only screen and (max-width: 992px){
+    .sidebar{
+        display: none;
+    }
+    .page-content{
+       margin-left: 0;
+    }
+    .hidden-items{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .close-toggle{
+       display: block; 
+    }
+      .about-column{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:600px){
+    .cards{
+        flex-direction: column;
+    }
+    .project-card{
+        width: 100%;
+        
+    }
+    .project-card__img:nth-child(1),.project-card__img:nth-child(2),.project-card__img:nth-child(3){
+        height: 100%;
+    }
+    .tab__btn:nth-child(4),.tab__btn:nth-child(5){
+        display: none;
+    }
+    .about-column__img{
+        display: block;
+    }
+    .pricing__card{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-details,.footer-content,.pricing__table,.about-content{
+        flex-direction: column;
+    }
+    .contact-details__link,.footer-columns,.about-column{
+        width: 100%!important;
+    }
+    .pricing__table{
+        padding: 0 8px;
+    }
+    .paginations{
+        padding-top: 16px;
+    }
+}

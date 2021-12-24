@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template w3School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Sidebar! -->
+    <div class="inner-wrapper">
+        <div class="sidebar" id="sidebar">
+            <nav class="sidebar-content">
+                <div class="sidebar-block">
+                    <img class="sidebar__image" src="images/user-image.jpg" alt="user-photo">
+                    <button class="close-toggle" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+                    <h4 class="sidebar__title">PORTFOLIO</h4>
+                    <p class="sidebar__text">Template by W3.CSS</p>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link active-menu__link" href="#portfolio"><i
+                                class="fa fa-th-large"></i>PORTFOLIO</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about"><i class="fa fa-user"></i>ABOUT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact"><i
+                                class="fa fa-envelope"></i>CONTACT</a></li>
+                </ul>
+                <div class="social">
+                    <a class="social__link" href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a class="social__link" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="social__link" href="https://www.snapchat.com/" target="_blank"><i
+                            class="fab fa-snapchat"></i></a>
+                    <a class="social__link" href="https://www.pinterest.com/" target="_blank"><i
+                            class="fab fa-pinterest-p"></i></a>
+                    <a class="social__link" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="social__link" href="https://linkedin.com/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Page Content! -->
+        <div class="page-content" id="page-content">
+            <div id="overlay-modal"></div>
+
+            <!-- Header -->
+            <div class="hidden-items" id="hidden-items">
+                <button class="open-toggle" onclick="openMenu()"><i class="fa fa-bars"></i></button>
+                <img class="hidden-items__avatar" src="images/user-image.jpg" alt="Me">
+            </div>
+            <header class="header" id="portfolio">
+                <h1 class="header__title">My Portfolio</h1>
+                <div class="header-tab tab">
+                    <span class="tab__text">Filter:</span>
+                    <button class="tab__btn active-tab__btn">All</button>
+                    <button class="tab__btn"><i class="far fa-gem"></i>Design</button>
+                    <button class="tab__btn"><i class="far fa-image"></i>Photos</button>
+                    <button class="tab__btn"><i class="fa fa-map-pin"></i>Art</button>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <main>
+
+                <!-- Projects Cards -->
+                <section class="cards">
+                    <div class="project-card">
+                        <img class="project-card__img" src="images/mountains.jpg" alt="Norway">
+                        <div class="card-titles">
+                            <h4 class="project-card__title">Lorem Ipsum</h4>
+                            <p class="project-card__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                                condimentum, porta lectus vitae,
+                                ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card__img" src="images/lights.jpg" alt="Lights">
+                        <div class="card-titles">
+                            <h4 class="project-card__title">Lorem Ipsum</h4>
+                            <p class="project-card__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                                condimentum, porta lectus vitae,
+                                ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card__img" src="images/nature.jpg" alt="Nature">
+                        <div class="card-titles">
+                            <h4 class="project-card__title">Lorem Ipsum</h4>
+                            <p class="project-card__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                                condimentum, porta lectus vitae,
+                                ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card__img" src="images/forest.jpg" alt="Forest">
+                        <div class="card-titles">
+                            <h4 class="project-card__title">Lorem Ipsum</h4>
+                            <p class="project-card__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                                condimentum, porta lectus vitae,
+                                ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card__img" src="images/coffee.jpg" alt="Coffee">
+                        <div class="card-titles">
+                            <h4 class="project-card__title">Lorem Ipsum</h4>
+                            <p class="project-card__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                                condimentum, porta lectus vitae,
+                                ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card__img" src="images/bear.jpg" alt="Bear">
+                        <div class="card-titles">
+                            <h4 class="project-card__title">Lorem Ipsum</h4>
+                            <p class="project-card__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                                condimentum, porta lectus vitae,
+                                ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pagination -->
+                <div class="paginations">
+                    <a class="paginations__item paginations__btn" href="#">&#171;</a>
+                    <a class="paginations__item active-pagination__item" href="#">1</a>
+                    <a class="paginations__item" href="#">2</a>
+                    <a class="paginations__item" href="#">3</a>
+                    <a class="paginations__item" href="#">4</a>
+                    <a class="paginations__item paginations__btn" href="#">&#187;</a>
+                </div>
+                <section class="about" id="about">
+                    <div class="about-content">
+                        <div class="about-column">
+                            <img class="about-column__img" src="images/me1.jpg" alt="Me">
+                        </div>
+                        <div class="about-column">
+                            <img class="about-column__img" src="images/me2.jpg" alt="Me">
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <h4 class="about-info__title">About Me</h4>
+                        <p class="about-info__text">Just me, myself and I, exploring the universe of unknownment. I have
+                            a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share
+                            my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                            porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
+                            diam non fringilla.</p>
+
+                        <!-- Progress bars / Skills -->
+                        <hr>
+                        <div class="skills">
+                            <h4 class="skills__title">Technical Skills</h4>
+                            <p>Photography</p>
+                            <div class="skills__progress">
+                                <div class="photography-progress">95%</div>
+                            </div>
+                            <p>Web Design</p>
+                            <div class=" skills__progress">
+                                <div class="webDesign-progress">85%</div>
+                            </div>
+                            <p>Photoshop</p>
+                            <div class=" skills__progress">
+                                <div class="photoshop-progress">80%</div>
+                            </div>
+                            <button class="skills__btn">
+                                <i class="fa fa-download"></i>
+                                Download Resume
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pricing Tables -->
+                <section class="pricing">
+                    <hr>
+                    <h4 class="pricing__title">How much I charge</h4>
+                    <div class="pricing__table">
+                        <div class="pricing__card">
+                            <ul>
+                                <li class="pricing__type main-type">Basic</li>
+                                <li class="pricing__type">Web Design</li>
+                                <li class="pricing__type">Photography</li>
+                                <li class="pricing__type">1GB Storage</li>
+                                <li class="pricing__type">Mail Support</li>
+                                <li class="pricing__type">
+                                    <h3>$ 10</h3>
+                                    <span>per month</span>
+                                </li>
+                                <li class="pricing__type last-type"><button class="pricing__btn">Sign Up</button></li>
+                            </ul>
+                        </div>
+                        <div class="pricing__card">
+                            <ul>
+                                <li class="pricing__type main-type active">Pro</li>
+                                <li class="pricing__type">Web Design</li>
+                                <li class="pricing__type">Photography</li>
+                                <li class="pricing__type">50GB Storage</li>
+                                <li class="pricing__type">Endless Support</li>
+                                <li class="pricing__type">
+                                    <h3>$ 25</h3>
+                                    <span>per month</span>
+                                </li>
+                                <li class="pricing__type last-type"><button class="pricing__btn">Sign Up</button></li>
+                            </ul>
+                        </div>
+                        <div class="pricing__card">
+                            <ul>
+                                <li class="pricing__type main-type">Premium</li>
+                                <li class="pricing__type">Web Design</li>
+                                <li class="pricing__type">Photography</li>
+                                <li class="pricing__type">Unlimited Storage</li>
+                                <li class="pricing__type">Endless Support</li>
+                                <li class="pricing__type">
+                                    <h3>$ 25</h3>
+                                    <span>per month</span>
+                                </li>
+                                <li class="pricing__type last-type"><button class="pricing__btn">Sign Up</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="contact" id="contact">
+                    <h4 class="contact__title">Contact Me</h4>
+                    <div class="contact-details">
+                        <a class="contact-details__link" href="mailto:email@email.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                            <p class="contact-details__text">email@email.com</p>
+                        </a>
+                        <a class="contact-details__link active"
+                            href="https://www.google.com/maps/place/%D0%A7%D0%B8%D0%BA%D0%B0%D0%B3%D0%BE,+%D0%98%D0%BB%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9%D1%81,+%D0%A1%D0%A8%D0%90/@41.8333925,-88.0121478,10z/data=!3m1!4b1!4m5!3m4!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982"
+                            target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p class="contact-details__text">Chicago, US</p>
+                        </a>
+                        <a class="contact-details__link" href="tel:512312311" target="_blank">
+                            <i class="fas fa-phone-alt"></i>
+                            <p class="contact-details__text"> 512312311</p>
+                        </a>
+                    </div>
+                    <hr>
+
+                    <!-- Form -->
+                    <form action="/action_page.php" method="post" target="_blank">
+                        <div class="input-wrapper">
+                            <label for="nameInput">Name</label>
+                            <input class="input" id="nameInput" type="text" name="Name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="emailInput">Email</label>
+                            <input class="input" id="emailInput" type="email" name="Email" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="messageInput">Message</label>
+                            <input class="input" id="messageInput" type="text" name="Message" required>
+                        </div>
+                        <button class="input-btn" id="inputBtn" type="submit" disabled><i
+                                class="fa fa-paper-plane"></i>Send Message</button>
+                    </form>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-columns">
+                        <h3 class="footer-columns__title">FOOTER</h3>
+                        <p class="footer-columns__description">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                            condimentum, porta lectus vitae,ultricies congue gravida diam non fringilla.</p>
+                        <p class="footer__link">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+                                target="_blank">w3.css</a></p>
+                    </div>
+                    <div class="footer-columns">
+                        <h3 class="footer-columns__title">BLOG POSTS</h3>
+                        <ul>
+                            <li class="posts">
+                                <img class="posts__image" src="images/workshop.jpg" alt="Working">
+                                <div class="posts-info">
+                                    <span class="posts-info__title">Lorem</span>
+                                    <span class="posts-info__description">Sed mattis nunc</span>
+                                </div>
+                            </li>
+                            <li class="posts">
+                                <img class="posts__image" src="images/cable-road.jpg" alt="Cable-road">
+                                <div class="posts-info">
+                                    <span class="posts-info__title">Ipsum</span>
+                                    <span class="posts-info__description">Praes tinci sed</span>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-columns">
+                        <h3 class="footer-columns__title">POPULAR TAGS</h3>
+                        <div class="badge">
+                            <span class="badge-item active">Travel</span>
+                            <span class="badge-item">New York</span>
+                            <span class="badge-item">London</span>
+                            <span class="badge-item">IKEA</span>
+                            <span class="badge-item">NORWAY</span>
+                            <span class="badge-item">DIY</span>
+                            <span class="badge-item">Ideas</span>
+                            <span class="badge-item">Baby</span>
+                            <span class="badge-item">Family</span>
+                            <span class="badge-item">News</span>
+                            <span class="badge-item">Clothing</span>
+                            <span class="badge-item">Shopping</span>
+                            <span class="badge-item">Sports</span>
+                            <span class="badge-item">Games</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="page-end">
+                Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
