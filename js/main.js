@@ -13,27 +13,33 @@ let emailInputValid = false;
 let messageInputValid = false;
 
 nameInput.addEventListener("change", (e) => {
-    if (e.target.value != "")
+    if (e.target.value.length > 0)
         nameInputValid = true;
     handleClick()
-    console.log(e.target.value)
+
 });
 emailInput.addEventListener("change", (e) => {
-    if (e.target.value != "")
+    if (e.target.value.length > 0)
         emailInputValid = true;
     handleClick()
-    console.log(e.target.value)
 });
 messageInput.addEventListener("change", (e) => {
-    if (e.target.value != "")
+    if (e.target.value.length > 0)
         messageInputValid = true;
     handleClick();
-    console.log(e.target.value)
+
 });
 
+
+inputBtn.addEventListener("click", () => {
+    console.log(nameInput.value)
+    console.log(emailInput.value)
+    console.log(messageInput.value)
+}
+)
 const handleClick = () => {
-    inputBtn.disabled = nameInput.value.length > 0 && emailInput.value.length > 0 && messageInput.value.length > 0 ? false : true;
-};
+    inputBtn.disabled = nameInputValid && emailInputValid && messageInputValid ? false : true;
+}
 
 // Function Hamburger Toggles
 function openMenu() {
